@@ -152,6 +152,7 @@ body{
             display: flex;
             column-gap: 27.5px;
             flex-wrap: wrap;
+            row-gap: 20px;
             .shoes-card{
                 border: 1px solid rgb(230, 230, 230);
                 border-radius: 15px;
@@ -188,6 +189,7 @@ body{
         }
     }
     .overlay-shadow{ // тень
+        display: none;
         position: absolute;
         left: 0;
         top: 0;
