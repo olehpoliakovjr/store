@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+input,
+button,
+textarea {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+body{
+    background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+   -webkit-font-smoothing: antialiased; 
+}
+.wrapper{
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0);
+    border-radius: 20px;
+    margin: 15px auto;
+    height: 80vh;
+    header{
+        padding: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        .header-left{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            .shop-name{
+                text-transform: uppercase;
+            }
+            p{
+                margin: 0;
+                font-style: italic;
+                font-size: 18px;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+        .header-right{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            flex-wrap: wrap;
+            li{
+                img{
+                    cursor: pointer;
+                }
+            }
+            .cart-and-sum{
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+                span{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+        
+    }
+    main{
+        padding: 45px;
+
+        .main-top{
+            display: flex;
+            justify-content: space-between;
+            h1{
+                margin-bottom: 30px;
+            }
+            input{
+                border: 1px solid rgb(230, 230, 230);
+                border-radius: 10px;
+                padding: 0 20px;
+                height: 35px;
+            }
+            
+            
+        }
+        .sneakers{
+            display: flex;
+            column-gap: 27.5px;
+            flex-wrap: wrap;
+            .shoes-card{
+                border: 1px solid rgb(230, 230, 230);
+                border-radius: 15px;
+                padding: 20px;
+                width: 200px;
+    
+                p{
+                    font-size: 15px;
+                }
+                .card-bottom{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    div{
+                        padding: 10px 0;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    button{
+                        background-color: white;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
