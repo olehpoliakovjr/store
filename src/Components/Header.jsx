@@ -1,8 +1,8 @@
 import React from "react";
 
-import logo from '../assets/logo.png'
+import logo from '../assets/logo2.png'
 import like from '../assets/like.png'
-import cart from '../assets/cart.png'
+import cart from '../assets/cart2.png'
 import profile from '../assets/profile.png'
 
 
@@ -10,7 +10,7 @@ const Header = () => {
   return(
     <header>
       <div className='header-left'>
-        <img src={logo} alt="logo" style={{width: 40, height: 40}}/>
+        <img src={logo} alt="logo" style={{width: 50, height: 50}}/>
         <div>
             <a href='#'><h2 className='shop-name'>Sneakers shop</h2></a>
             <p>Best sneakers shop</p>
@@ -18,7 +18,7 @@ const Header = () => {
       </div>
       <ul className='header-right'>
         <li className='cart-and-sum'>
-            <img src={cart} style={{width: 32, height:32}} alt="cart"/>
+            <img src={cart} style={{width: 30, height:30}} alt="cart"/>
             <span>130$</span>
         </li>
         <li>
