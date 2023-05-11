@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import './App.scss'
 
 import search from './assets/search.png'
@@ -9,7 +9,7 @@ import three from './assets/3.jpg'
 import four from './assets/4.jpg'
 import five from './assets/5.jpg'
 
-import Card from './Components/Card'
+import Card from './Components/Card/Card'
 import Header from './Components/Header'
 import Cart from './Components/Cart'
 
@@ -25,10 +25,13 @@ const sneakersArray = [
 ]
 
 function App() {
+  
+  const [cartOpened, setCardOpened] = useState(false);
+
 	return (
 		<div className="wrapper">
-			<Cart />
-			<Header />
+			{cartOpened ? <Cart onCloseCart={() => setCardOpened(false)} /> : null}
+			<Header onClickCart={() => setCardOpened(true)}/>
 			<main>
 				<div className="main-top">
 					<h1>All sneakers</h1>

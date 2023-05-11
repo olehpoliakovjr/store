@@ -30,9 +30,8 @@
       display: flex;
       flex-direction: column;
     }
-    button{
-      background-color: white;
-      border-radius: 5px;
+    .plus{
+      cursor: pointer;
     }
   }
 }

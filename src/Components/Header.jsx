@@ -6,7 +6,7 @@ import cart from '../assets/cart2.png'
 import profile from '../assets/profile.png'
 
 
-const Header = () => {
+const Header = (props) => {
   return(
     <header>
       <div className='header-left'>
@@ -17,7 +17,7 @@ const Header = () => {
         </div>
       </div>
       <ul className='header-right'>
-        <li className='cart-and-sum'>
+        <li className='cart-and-sum' onClick={props.onClickCart}>
             <img src={cart} style={{width: 30, height:30}} alt="cart"/>
             <span>130$</span>
         </li>
