@@ -21,6 +21,7 @@ const sneakersArray = [
     {title: "Men's Nike Blazer Mid Suede Sneakers", price: 190,image: three},
     {title: "Puma X Aka Boku Future Rider Sneakers", price: 185,image: four},
     {title: "Men's Under Armour Curry 8 Sneakers", price: 255,image: five},
+    
 ]
 
 function App() {
